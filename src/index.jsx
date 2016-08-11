@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Remarkable from 'remarkable';
 import Comment from './Comment/comment';
-
+import NodeContainer from './node';
+import nodes_json from '../data/nodes.json';
+console.log(NodeContainer);
 import { Router, Route, Link, browserHistory } from 'react-router';
 
 var CommentList = React.createClass({
@@ -64,7 +66,7 @@ var Home = React.createClass({
     return (
       <div>
         <Navbar />
-        <CommentBox />
+        <NodeContainer data={nodes_json} />
       </div> 
     );
   }
@@ -76,3 +78,5 @@ ReactDOM.render((
     </Route>
   </Router>
 ), document.getElementById('content'));
+
+console.log(nodes_json);

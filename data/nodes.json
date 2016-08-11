@@ -1,0 +1,5 @@
+[
+  { "id": 1, "title": "Understanding basic CSS attributes", "description": "Using CSS attributes is the core way to control how your webpage will look. By learning how to use attributes such as margins, widths, colors, and *many* more, you will be on your way to styling great web pages", "able_to": "Once you've finished this node, you will be able to use basic CSS attributes to modify how components on your webpage appear" },
+  { "id": 2, "title": "Understanding CSS classes and id's", "description": "Using classes and ids in CSS to organize your CSS is key to building larger pages while maintaining existing CSS. Using classes allows for you to abstract common CSS components so you don't have to write CSS for each complicated DOM hierarchy", "able_to": "Write CSS using classes and id's for organization" },
+  { "id": 3, "title": "Inline CSS styling", "description": "Before moving on to more advanced topics of organizing large amounts of CSS, it's important to understand how attributes can be applied to specific DOM elements. Inline styling allows you to embed your CSS attributes directly onto DOM elements", "able_to": "Apply CSS to the DOM directly inline" }
+]
