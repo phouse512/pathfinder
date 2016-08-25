@@ -4,8 +4,9 @@ import Remarkable from 'remarkable';
 import Comment from './Comment/comment';
 import NodeContainer from './node';
 import Navbar from './nav';
-import Track from './track';
+import TrackListContainer from './track';
 import nodes_json from '../data/nodes.json';
+import tracks_json from '../data/tracks.json';
 import { Router, Route, Link, hashHistory } from 'react-router';
 
 var CommentList = React.createClass({
@@ -46,7 +47,7 @@ var Home = React.createClass({
     return (
       <div>
         <Navbar current='Home'/>
-        <NodeContainer data={nodes_json} />
+        <TrackListContainer data={tracks_json} />
       </div> 
     );
   }

@@ -1,10 +1,48 @@
 {
   "django": {
+    "title": "Django - from start to finish",
+    "description": "This track will take you through the process of creating, deploying, and managing your django web application. The track will be sized into sections based on building, deploying, and managing them",
+    "stages": [
+      {
+        "title": "building your web application",
+        "nodes": [
+          {
+            "title": "managing your python environment",
+            "description": "Setting up a new virtual environment is very important in order to keep your dependencies list clean and manageable. These resources will help you initialize a new virtualenv and install the necessary dependencies to set up a Django application."
+          },
+          {
+            "title": "initializing a django application",
+            "description": "It's time to start your Django application! This node will get the framework setup so you can begin development."
+          },
+          {
+            "title": "setting up a database",
+            "description": "By default, Django sets up a sqlite database for ease-of-use, but this quickly becomes clunky and unusable for production applications. This will help you setup a Postgres database and connect it to your Django app."
+          },
+          {
+            "title": "understanding Django views",
+            "description": "It's time to start building a basic view that you can go visit in your browser. This is the starting point for building complex web applications."
+          },
+          {
+            "title": "basic HTML structure",
+            "description": "You'll need to understand the basics of HTML to begin building real and useful views for your application. HTML stands for HyperText Markup Language, and it allows for you to organize and structure the data you present to your users." 
+          },
+          {
+            "title": "introduction to templating",
+            "description": "Modern web applications require much more than static websites. Server-side templating allows for you to dynamically generate and render websites for different users."
+          },
+          {
+            "title": "using Django models",
+            "description": "Django models are the interface between your Django application and the database you previously connected. Using a persistent data-store for your application is the next step to building dynamic experiences."
+          }
+        ]
+      },
+      {
+        "title": "hosting and deploying your web application",
+        "nodes": [
 
-
-  },
-  "static site": {
-
+        ]
+      }
+    ]
   }
 }
 
