@@ -15,10 +15,10 @@ var TrackListItem = React.createClass({
         <div className="card">
           <div className="card-block">
             <h4 className="card-title">
-              title
+              {this.props.title}              
             </h4>
             <p className="card-text">
-              test text
+              {this.props.description}
             </p>
           </div>
         </div>
