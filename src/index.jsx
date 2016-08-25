@@ -4,8 +4,9 @@ import Remarkable from 'remarkable';
 import Comment from './Comment/comment';
 import NodeContainer from './node';
 import Navbar from './nav';
+import Track from './track';
 import nodes_json from '../data/nodes.json';
-import { Router, Route, Link, browserHistory } from 'react-router';
+import { Router, Route, Link, hashHistory } from 'react-router';
 
 var CommentList = React.createClass({
   render: function() {
@@ -51,9 +52,18 @@ var Home = React.createClass({
   }
 });
 
+var TracksPage = React.createClass({
+  render: function() {
+    return (
+      <Navbar current='Tracks'/>  
+    );
+  }
+});
+
 ReactDOM.render((
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={Home}>
+      <Route path="tracks" component={TracksPage} />
     </Route>
   </Router>
 ), document.getElementById('content'));
