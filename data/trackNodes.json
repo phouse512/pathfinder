@@ -1,0 +1,15 @@
+{
+  "1": {
+    "title": "building your web application",
+    "resources": [
+      {
+        "link": "https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/",
+        "description": "This blog post goes into the details of why and how you should set up your virtual environment."
+      }
+    ],
+    "goal": "By the end of this section, you should have a working virtual environment that you can activate and deactivate. You should be able to run `pip list` and see a minimal list of dependencies."
+  },
+  "2": {
+
+  }
+}

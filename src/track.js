@@ -2,7 +2,6 @@ import React from 'react';
 
 var Stage = React.createClass({
   render: function() {
-    console.log(this.props.nodes);
     var nodes = this.props.nodes.map(function(node) {
       return (
         <Node title={node.title} description={node.description} />

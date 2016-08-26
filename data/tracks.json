@@ -8,6 +8,7 @@
         "title": "building your web application",
         "nodes": [
           {
+            "id": 1,
             "title": "managing your python environment",
             "description": "Setting up a new virtual environment is very important in order to keep your dependencies list clean and manageable. These resources will help you initialize a new virtualenv and install the necessary dependencies to set up a Django application."
           },

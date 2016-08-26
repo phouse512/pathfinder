@@ -6,6 +6,7 @@ import NodeContainer from './node';
 import Navbar from './nav';
 import TrackListContainer from './trackList';
 import TrackContainer from './track';
+import TrackNode from './trackNode';
 import nodes_json from '../data/nodes.json';
 import tracks_json from '../data/tracks.json';
 import { Router, Route, Link, hashHistory } from 'react-router';
@@ -55,12 +56,11 @@ var Home = React.createClass({
 });
 
 var TracksPage = React.createClass({
-
   render: function() {
     return (
       <div>
         <Navbar current='Tracks'/>
-        <TrackContainer track={tracks_json['django']} />
+        <TrackContainer track={tracks_json[this.props.params.trackId]} />
       </div>    
     );
   }
@@ -69,8 +69,9 @@ var TracksPage = React.createClass({
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Home} /> 
-    <Route path="/tracks" component={TracksPage} />
+    <Route path="/tracks" component={TrackListContainer} />
     <Router path="/tracks/:trackId" component={TracksPage} />
+    <Router path="/nodes/:nodeId" component={TrackNode} />
   </Router>
 ), document.getElementById('content'));
 
