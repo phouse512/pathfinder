@@ -11,7 +11,6 @@ var NavCurrentPage = React.createClass({
 var NavItem = React.createClass({
   render: function() {
     var active = "nav-item";
-    console.log(this.props.current);
     if (this.props.current == 'true') {
       active += " active";
     }

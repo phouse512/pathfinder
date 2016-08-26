@@ -4,7 +4,8 @@ import Remarkable from 'remarkable';
 import Comment from './Comment/comment';
 import NodeContainer from './node';
 import Navbar from './nav';
-import TrackListContainer from './track';
+import TrackListContainer from './trackList';
+import TrackContainer from './track';
 import nodes_json from '../data/nodes.json';
 import tracks_json from '../data/tracks.json';
 import { Router, Route, Link, hashHistory } from 'react-router';
@@ -54,18 +55,22 @@ var Home = React.createClass({
 });
 
 var TracksPage = React.createClass({
+
   render: function() {
     return (
-      <Navbar current='Tracks'/>  
+      <div>
+        <Navbar current='Tracks'/>
+        <TrackContainer track={tracks_json['django']} />
+      </div>    
     );
   }
 });
 
 ReactDOM.render((
   <Router history={hashHistory}>
-    <Route path="/" component={Home}>
-      <Route path="tracks" component={TracksPage} />
-    </Route>
+    <Route path="/" component={Home} /> 
+    <Route path="/tracks" component={TracksPage} />
+    <Router path="/tracks/:trackId" component={TracksPage} />
   </Router>
 ), document.getElementById('content'));
 

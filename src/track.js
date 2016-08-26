@@ -1,46 +1,62 @@
 import React from 'react';
 
-var Track = React.createClass({
+var Stage = React.createClass({
   render: function() {
-    return (
-      <div>{ this.params.trackId }</div>
-    );
-  }
-});
-
-var TrackListItem = React.createClass({
-  render: function() {
-    return (
-      <div className = "col-lg-3 col-md-3">
-        <div className="card">
-          <div className="card-block">
-            <h4 className="card-title">
-              {this.props.title}              
-            </h4>
-            <p className="card-text">
-              {this.props.description}
-            </p>
-          </div>
-        </div>
-      </div>
-
-    );
-  }
-});
-
-var TrackListContainer = React.createClass({
-  render: function() {
-    var tracks = Object.keys(this.props.data).map(function(track) {
+    console.log(this.props.nodes);
+    var nodes = this.props.nodes.map(function(node) {
       return (
-        <TrackListItem />
+        <Node title={node.title} description={node.description} />
       );
     });
     return (
-      <div className="row">
-        {tracks}
+      <div>
+        <h3 className="card-title">{this.props.title}</h3>
+        <ul className="list-group">
+          {nodes}
+        </ul>
+        <br />
       </div>
     );
   }
 });
 
-export default TrackListContainer;
+var Node = React.createClass({
+  render: function() {
+    return (
+        <a href="javascript:;" className="list-group-item list-group-item-action">
+          <b>{this.props.title}:</b> {this.props.description} 
+        </a>
+    );
+  }
+});
+
+var Track = React.createClass({
+  render: function() {
+    var stages = this.props.track.stages.map(function(stage) {
+      return (
+        <Stage title={stage.title} nodes={stage.nodes} />
+      );
+    });
+    return (
+      <div className="col-lg-12 col-md-12">
+        <div className="card card-block">
+          <h3 className="card-title">{this.props.track.title}</h3>
+          <p className="card-text">{this.props.track.description}</p>
+            {stages}
+        </div>
+      </div>
+    );
+  }
+});
+
+var TrackContainer = React.createClass({
+  render: function() {
+    return (
+      <div className="row">
+        <Track track={this.props.track} />
+      </div>
+    );
+  }
+});
+
+export default TrackContainer;

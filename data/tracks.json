@@ -1,7 +1,8 @@
 {
   "django": {
+    "id": 1,
     "title": "Django - from start to finish",
-    "description": "This track will take you through the process of creating, deploying, and managing your django web application. The track will be sized into sections based on building, deploying, and managing them",
+    "description": "This track will take you through the process of creating, deploying, and managing your django web application. The track will be sized into sections based on building, deploying, and managing your project.",
     "stages": [
       {
         "title": "building your web application",
@@ -15,7 +16,7 @@
             "description": "It's time to start your Django application! This node will get the framework setup so you can begin development."
           },
           {
-            "title": "setting up a database",
+            "title": "setting up a postgres database",
             "description": "By default, Django sets up a sqlite database for ease-of-use, but this quickly becomes clunky and unusable for production applications. This will help you setup a Postgres database and connect it to your Django app."
           },
           {
@@ -23,23 +24,47 @@
             "description": "It's time to start building a basic view that you can go visit in your browser. This is the starting point for building complex web applications."
           },
           {
-            "title": "basic HTML structure",
-            "description": "You'll need to understand the basics of HTML to begin building real and useful views for your application. HTML stands for HyperText Markup Language, and it allows for you to organize and structure the data you present to your users." 
-          },
-          {
-            "title": "introduction to templating",
-            "description": "Modern web applications require much more than static websites. Server-side templating allows for you to dynamically generate and render websites for different users."
-          },
-          {
             "title": "using Django models",
             "description": "Django models are the interface between your Django application and the database you previously connected. Using a persistent data-store for your application is the next step to building dynamic experiences."
+          },
+          {
+            "title": "unit-testing your application",
+            "description": "In order to increase the maintainability of your application in the future, especially when refactoring in the future."
           }
         ]
       },
       {
         "title": "hosting and deploying your web application",
         "nodes": [
-
+          {
+            "title": "instantiating a server",
+            "description": "Now that the application is running locally, it's time to  set up a remote server so that your server can be deployed."
+          },
+          {
+            "title": "running Django with gunicorn and upstart",
+            "description": "To make sure that our server is always running, we'll use linux's upstart services to always keep it up. The test webserver, wsgi that comes with Django is also not suitable for production, so we'll use gunicorn to handle this."
+          },
+          {
+            "title": "setting up nginx",
+            "description": "Now that our server is up and running, it's time to make sure that the server is accessible by the default port 80 from the outside world."
+          },
+          {
+            "title": "configuring a domain name",
+            "description": "Although you can access your web application from the ip address of your linux box, real-world applications use human-readable domains to provide a lasting impression."
+          }
+        ]
+      },
+      {
+        "title": "managing your django application",
+        "nodes": [
+          {
+            "title": "the importance of logging",
+            "description": "While your server is running, it's important to be able to understand what's going on. Logging allows for you to debug and see exactly how your application is acting"
+          },
+          {
+            "title": "using graphite for metrics",
+            "description": "While logs are useful for in-depth information, metrics dashboards allow for you to easily see at a glance the status of your service."
+          }
         ]
       }
     ]
