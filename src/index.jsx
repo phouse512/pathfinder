@@ -55,6 +55,17 @@ var Home = React.createClass({
   }
 });
 
+var NodesPage = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Navbar current='Nodes'/>
+        <TrackNode nodeId={this.props.params.nodeId} />
+      </div>
+    );
+  }
+});
+
 var TracksPage = React.createClass({
   render: function() {
     return (
@@ -71,7 +82,7 @@ ReactDOM.render((
     <Route path="/" component={Home} /> 
     <Route path="/tracks" component={TrackListContainer} />
     <Router path="/tracks/:trackId" component={TracksPage} />
-    <Router path="/nodes/:nodeId" component={TrackNode} />
+    <Router path="/nodes/:nodeId" component={NodesPage} />
   </Router>
 ), document.getElementById('content'));
 

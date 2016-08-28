@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 var Stage = React.createClass({
   render: function() {
     var nodes = this.props.nodes.map(function(node) {
       return (
-        <Node title={node.title} description={node.description} />
+        <Node title={node.title} description={node.description} key={node.id} id={node.id} />
       );
     });
     return (
@@ -22,7 +23,7 @@ var Stage = React.createClass({
 var Node = React.createClass({
   render: function() {
     return (
-        <a href="javascript:;" className="list-group-item list-group-item-action">
+        <a href={'#/nodes/' + this.props.id} className="list-group-item list-group-item-action">
           <b>{this.props.title}:</b> {this.props.description} 
         </a>
     );
