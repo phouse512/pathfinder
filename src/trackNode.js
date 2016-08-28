@@ -25,7 +25,7 @@ var TrackNode = React.createClass({
         <div className="col-lg-12 col-md-12">
           <div className="card card-block">
             <h3 className="card-title">{node_json.title}</h3>
-            <p className="list-group-item-text">{node_json.description}</p>
+            <p className="list-group-item-text lead">{node_json.description}</p>
             <hr />
             <div className="list-group">
               <a target="_blank" href={node_json.resources[0].link} className="list-group-item list-group-item-action">
