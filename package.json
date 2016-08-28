@@ -26,6 +26,7 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-router": "^2.6.1",
+    "react-text-truncate": "^0.8.2",
     "remarkable": "^1.6.2"
   }
 }
