@@ -1,7 +1,7 @@
 {
   "name": "pathfinder",
   "version": "0.0.2",
-  "description": "learning tool",
+  "description": "learning tool build with node, webpack, and react",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
