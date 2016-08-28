@@ -1,6 +1,7 @@
 {
   "1": {
     "title": "managing your python environment",
+    "description": "Setting up a new virtual environment is very important in order to keep your dependency list clean and manageable. These resources will help you initialize a new virtualenv and install the necessary dependencies to set up a Django application.",
     "resources": [
       {
         "link": "https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/",

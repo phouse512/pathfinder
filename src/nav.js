@@ -29,10 +29,14 @@ var Navbar = React.createClass({
     if (this.props.current == 'Home') {
       home = <NavItem name='Home' current='true' />;
       about = <NavItem name='About' current='false' />;
-    } else {
+    } else if (this.props.current == 'About') {
       home = <NavItem name='Home' current='false' />;
       about = <NavItem name='About' current='true' />;
+    } else {
+      home = <NavItem name='Home' current='false' />;
+      about = <NavItem name='About' current='false' />;
     }
+
     return (
       <nav className="navbar navbar-light bg-faded">
         <div className="collapse navbar-toggleable-xs">
