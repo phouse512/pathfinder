@@ -50,6 +50,7 @@ var Home = React.createClass({
       <div>
         <Navbar current='Home'/>
         <TrackListContainer data={tracks_json} />
+        ayayayaya
       </div> 
     );
   }
