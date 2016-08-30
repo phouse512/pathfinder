@@ -11,6 +11,14 @@
     "goal": "By the end of this section, you should have a working virtual environment that you can activate and deactivate. You should be able to run `pip list` and see a minimal list of dependencies."
   },
   "2": {
-
+    "title": "dummy title",
+    "description": "dummy desc",
+    "resources": [
+      {
+        "link": "rando link",
+        "description": "link desc"
+      }
+    ],
+    "goal": "rando goal"
   }
 }
