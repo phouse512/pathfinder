@@ -43,7 +43,7 @@ var Track = React.createClass({
           <h3 className="card-title">{this.props.track.title}</h3>
           <p className="card-text">{this.props.track.description}</p>
             {stages}
-        </div>
+       </div>
       </div>
     );
   }

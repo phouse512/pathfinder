@@ -35,7 +35,7 @@ var TrackNode = React.createClass({
             <hr />
             <p className="card-text"><b>goal: </b>{node_json.goal}</p>
 
-            <p className="card-text"><small><i>note: </i>if you get confused or stuck here at all, email me at phouse512 AT gmail dot com, and we can set up a 1-on-1 tutoring session to figure out what you're stuck on!</small></p>
+            <p className="card-text"><small><i>note: </i>if you get confused or stuck here at all, email me at <i>help AT pathfinding.space</i>, and we can set up a 1-on-1 tutoring session to figure out what you're stuck on!</small></p>
           </div>
         </div>
       </div>
