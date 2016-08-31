@@ -11,14 +11,69 @@
     "goal": "By the end of this section, you should have a working virtual environment that you can activate and deactivate. You should be able to run `pip list` and see a minimal list of dependencies."
   },
   "2": {
-    "title": "dummy title",
-    "description": "dummy desc",
+    "title": "initializing a django application",
+    "description": "It's time to start your Django application! This lesson will get the framework setup and introduce you to the basics of how Django works.",
     "resources": [
       {
-        "link": "rando link",
-        "description": "link desc"
+        "link": "https://docs.djangoproject.com/en/1.10/intro/tutorial01/",
+        "description": "This is the #1 place to start, it will teach you the commands you need to get up and running, and will show you how to render a basic 'Hello World'. You don't need to move to the part2 of this tutorial for now."
       }
     ],
-    "goal": "rando goal"
+    "goal": "To have a working Django project that you can start up and view a simple static web view."
+  },
+  "3": {
+    "title": "setting up a postgres database",
+    "description": "It's time to get a database set up on your local machine. We'll be using Postgres instead of the Django default, sqlite.",
+    "resources": [
+      {
+        "link": "http://www.marinamele.com/taskbuster-django-tutorial/install-and-configure-posgresql-for-django",
+        "description": "This in-depth blog post will take you step-by-step to get postgres up and running locally. Unfortunately this is a Mac OSX tutorial, so if you are running a different system, let me know!"
+      }
+    ],
+    "goal": "To have a running Postgres database locally that you can connect to your Django application."
+  },
+  "4": {
+    "title": "understanding Django views",
+    "description": "Views in Django refer to how data gets passed in and rendered to your clients.",
+    "resources": [
+      {
+        "link": "http://opentechschool.github.io/django-101/en/first_steps/views_templates.html",
+        "description": "This tutorial will give you an introduction to working with templates and rendering data from your python functions"
+      }
+    ],
+    "goal": "To be able to write Jinja templates that can be referenced and populated inside your Django application that allow for dynamically generated web views"
+  },
+  "5": {
+    "title": "using Django models",
+    "description": "Django models are the interface between your Django application and the database you previously connected. Models allow for you to save objects into your database.",
+    "resources": [
+      {
+        "link": "http://tutorial.djangogirls.org/en/django_models/",
+        "description": "This in-depth tutorial will help yo ucreate a single model that you can modify and adapt to your own application"
+      }
+    ],
+    "goal": "To be able to create models so that you can now begin to store persistent data inside your database"
+  },
+  "6": {
+    "title": "unit-testing your application",
+    "description": "Unit-testing allows for your application to stay more maintainable and bug-free as you continue to update and change your project in the future.",
+    "resources": [
+      {
+        "link": "http://django-testing-docs.readthedocs.io/en/latest/basic_unittests.html",
+        "description": "woot"
+      }
+    ],
+    "goal": "To understand why and how to unit-test your django web applications"
+  },
+  "7": {
+    "title": "instantiating a server",
+    "description": "it's time to get your code hosted on the internet! Before you can do that, you'll need to configure a server to get it up and running. A note here: for all of the resources here, I assume you're running an Ubuntu 14.04 web server, a standard in the industry.\n\n Also I recommend using DigitalOcean for your hosting needs at the beginning, it is cost and user-friendly.",
+    "resources": [
+      {
+        "link": "https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04",
+        "description": "this will help you login and configure a basic ubuntu server to get ready for deploying your Django app."
+      }
+    ],
+    "goal": "To have a running Ubuntu server that you can ssh into and run basic commands off of."
   }
 }

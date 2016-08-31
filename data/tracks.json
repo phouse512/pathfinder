@@ -31,11 +31,6 @@
             "id": 5,
             "title": "using Django models",
             "description": "Django models are the interface between your Django application and the database you previously connected. Using a persistent data-store for your application is the next step to building dynamic experiences."
-          },
-          {
-            "id": 6,
-            "title": "unit-testing your application",
-            "description": "In order to increase the maintainability of your application in the future, especially when refactoring in the future."
           }
         ]
       },
