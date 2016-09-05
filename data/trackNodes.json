@@ -60,10 +60,10 @@
     "resources": [
       {
         "link": "http://django-testing-docs.readthedocs.io/en/latest/basic_unittests.html",
-        "description": "woot"
+        "description": "dadeedum"
       }
     ],
-    "goal": "To understand why and how to unit-test your django web applications"
+    "goal": "To understand why and how to unit-test your django web applications."
   },
   "7": {
     "title": "instantiating a server",
@@ -78,14 +78,14 @@
   },
   "8": {
     "title": "running Django with gunicorn and upstart",
-    "description": "To make sure that our server is always running, this tutorial will help you use Linux's upstart services to keep it up. You'll also learn how to use gunicorn to run your Django server instead of the default WSGI",
+    "description": "To make sure that our server is always running, this tutorial will help you use Linux's upstart services to keep it up. You'll also learn how to use gunicorn to run your Django server instead of the default WSGI.",
     "resources": [
       {
         "link": "https://ponytech.net/blog/django-deployement-ubuntu-upstart-nginx-gunicorn-and-virtualenvwrapper",
-        "description": "This blog post will guide you through the nitty-gritty details of getting your Django application permanently running on your Ubuntu machine"
+        "description": "This blog post will guide you through the nitty-gritty details of getting your Django application permanently running on your Ubuntu machine."
       }
     ],
-    "goal": "To have a permanently running Django application on your Ubuntu server"
+    "goal": "To have a permanently running Django application on your Ubuntu server."
   },
   "9": {
     "title": "setting up nginx",
@@ -93,20 +93,31 @@
     "resources": [
       {
         "link": "https://ponytech.net/blog/django-deployement-ubuntu-upstart-nginx-gunicorn-and-virtualenvwrapper",
-        "description": "This previously linked blog post has a section on Nginx to help you get setup, if you already previously hadn't done so" 
+        "description": "This previously linked blog post has a section on Nginx to help you get setup, if you already previously hadn't done so." 
       }
     ],
     "goal": "You should be able to access your website from a browser now by putting your server's IP address in the url bar!"
   },
   "10": {
     "title": "configuring a domain name",
-    "description": "Although your server is accessible from your server's IP address, it's not very human-readable. This will help you setup a DNS record for your new server",
+    "description": "Although your server is accessible from your server's IP address, it's not very human-readable. This will help you setup a DNS record for your new server.",
     "resources": [
       {
         "link": "https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean",
-        "description": "This Digital Ocean guide will help you point a domain name (that you have to buy elsewhere, I usually recommend Namecheap) to your new Ubuntu server"
+        "description": "This Digital Ocean guide will help you point a domain name (that you have to buy elsewhere, I usually recommend Namecheap) to your new Ubuntu server."
       }
     ],
     "goal": "By now, you have a fully functioning web server that is accessible from the Internet via any web browser! Now you can work on iterating on your application :)"
+  },
+  "11": {
+    "title": "configuring postgresql on your ubuntu instance",
+    "description": "although you have a working postgres database on your local machine, your web server needs a database instance it can connect to. This will guide you through installing and running postgresql on your Ubuntu server.",
+    "resources": [
+      {
+        "link": "https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04",
+        "description": "On the existing ubuntu server you already configured, you can run through this tutorial to help you setup a working Postgres database. As a note, once this is running, you might have to change the connection settings depending on your configuration."
+      }
+    ],
+    "goal": "You'll have a working production database that is running 24/7 on your ubuntu server and not just on your laptop."
   }
 }

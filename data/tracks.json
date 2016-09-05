@@ -43,6 +43,11 @@
             "description": "Now that the application is running locally, it's time to  set up a remote server so that your server can be deployed."
           },
           {
+            "id": 11,
+            "title": "configuring postgresql on ubuntu",
+            "description": "Although you have a working database running locally on your machine, you need one to run a database on your new server you just set up."
+          },
+          {
             "id": 8,
             "title": "running Django with gunicorn and upstart",
             "description": "To make sure that our server is always running, we'll use linux's upstart services to always keep it up. The test webserver, wsgi that comes with Django is also not suitable for production, so we'll use gunicorn to handle this."
