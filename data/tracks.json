@@ -68,7 +68,7 @@
         "title": "managing your django application",
         "nodes": [
           {
-            "id": 11,
+            "id": 13,
             "title": "the importance of logging",
             "description": "While your server is running, it's important to be able to understand what's going on. Logging allows for you to debug and see exactly how your application is acting"
           },
