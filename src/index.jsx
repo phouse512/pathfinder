@@ -95,9 +95,32 @@ var TracksPage = React.createClass({
   }
 });
 
+export const About = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Navbar current='About'/>
+        <div className="row">
+          <div className="col-lg-12 col-md-12 col-sm-12">
+            <p className="lead">
+              Pathfinder was built because while there are dozens of programming blog posts and tutorials out there, many of them are focused on specific concepts. While this works for those who <i>know what to search for</i>, if you're a beginner and don't know exactly what to look for, it can be hard to get started. Pathfinder seeks to be the bridge in between great learning resources and beginners who don't know where to get started.
+            </p>
+            <hr />
+            <p>
+              This project was built and is managed by <a href="http://phizzle.space">Philip House</a>. It is currently a WIP and new tracks are in the process of being added. <br />              
+              Please email him at <i>help@pathfinding.space</i> if you have any questions, need help, or would like to contribute!
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
 ReactDOM.render((
   <Router history={hashHistory}>
-    <Route path="/" component={Home} /> 
+    <Route path="/" component={Home} />
+    <Route path="/about" component={About} />
     <Route path="/tracks" component={TrackListContainer} />
     <Router path="/tracks/:trackId" component={TracksPage} />
     <Router path="/nodes/:nodeId" component={NodesPage} />

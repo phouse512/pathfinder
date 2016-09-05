@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 var NavCurrentPage = React.createClass({
   render: function() {
@@ -17,7 +18,7 @@ var NavItem = React.createClass({
 
     return (
       <li className={active}>
-        <a className="nav-link" href="#">{this.props.name}</a>
+        <Link to={this.props.url} className='nav-link'>{this.props.name}</Link>
      </li>
     );
   }
@@ -27,14 +28,14 @@ var Navbar = React.createClass({
   render: function() {
     var home, about;
     if (this.props.current == 'Home') {
-      home = <NavItem name='Home' current='true' />;
-      about = <NavItem name='About' current='false' />;
+      home = <NavItem name='Home' current='true' url='/#' />;
+      about = <NavItem name='About' current='false' url='/about' />;
     } else if (this.props.current == 'About') {
-      home = <NavItem name='Home' current='false' />;
-      about = <NavItem name='About' current='true' />;
+      home = <NavItem name='Home' current='false' url='/#' />;
+      about = <NavItem name='About' current='true' url='/about' />;
     } else {
-      home = <NavItem name='Home' current='false' />;
-      about = <NavItem name='About' current='false' />;
+      home = <NavItem name='Home' current='false' url='/#' />;
+      about = <NavItem name='About' current='false' url='/about' />;
     }
 
     return (
