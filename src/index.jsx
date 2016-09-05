@@ -60,7 +60,7 @@ var Home = React.createClass({
                   <h4 className="modal-title" id="exampleModalLabel">How This Works</h4>
                 </div>
                 <div className="modal-body">
-                  <p className="lead">The following lessons contain links to online resources that may be blog posts, tutorials, etc. that will guide you through that lesson's scope of material. By the end of finishing each one, you should have accomplished what the goal is listed for each lesson. If anything is unclear, or you weren't able to learn the material from the included lesson, let me know via email at <i>help at pathfinding.space</i>. I can tutor and help make up for the areas that were lacking.</p>
+                  <p className="lead">The following lessons contain links to online resources that may be blog posts, tutorials, etc. that will guide you through that lesson's scope of material. By the end of finishing each one, you should have accomplished what the goal is listed for each lesson. <hr />If anything is unclear, or you weren't able to learn the material from the included lesson, let me know via email at <i>help at pathfinding.space</i>. I can tutor and help make up for the areas that were lacking.</p>
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
