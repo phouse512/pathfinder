@@ -75,5 +75,38 @@
       }
     ],
     "goal": "To have a running Ubuntu server that you can ssh into and run basic commands off of."
+  },
+  "8": {
+    "title": "running Django with gunicorn and upstart",
+    "description": "To make sure that our server is always running, this tutorial will help you use Linux's upstart services to keep it up. You'll also learn how to use gunicorn to run your Django server instead of the default WSGI",
+    "resources": [
+      {
+        "link": "https://ponytech.net/blog/django-deployement-ubuntu-upstart-nginx-gunicorn-and-virtualenvwrapper",
+        "description": "This blog post will guide you through the nitty-gritty details of getting your Django application permanently running on your Ubuntu machine"
+      }
+    ],
+    "goal": "To have a permanently running Django application on your Ubuntu server"
+  },
+  "9": {
+    "title": "setting up nginx",
+    "description": "Setting up Nginx will allow for our server to be available on port 80 to the rest of the outside world",
+    "resources": [
+      {
+        "link": "https://ponytech.net/blog/django-deployement-ubuntu-upstart-nginx-gunicorn-and-virtualenvwrapper",
+        "description": "This previously linked blog post has a section on Nginx to help you get setup, if you already previously hadn't done so" 
+      }
+    ],
+    "goal": "You should be able to access your website from a browser now by putting your server's IP address in the url bar!"
+  },
+  "10": {
+    "title": "configuring a domain name",
+    "description": "Although your server is accessible from your server's IP address, it's not very human-readable. This will help you setup a DNS record for your new server",
+    "resources": [
+      {
+        "link": "https://www.digitalocean.com/community/tutorials/how-to-set-up-a-host-name-with-digitalocean",
+        "description": "This Digital Ocean guide will help you point a domain name (that you have to buy elsewhere, I usually recommend Namecheap) to your new Ubuntu server"
+      }
+    ],
+    "goal": "By now, you have a fully functioning web server that is accessible from the Internet via any web browser! Now you can work on iterating on your application :)"
   }
 }
