@@ -86,6 +86,12 @@
     "title": "basic Unix proficiency",
     "description": "For any serious development work, knowing how to get around the command line and the Unix file-system is incredibly important. This track will go through the basic building blocks that will give you a strong foundation in using a Unix OS for programming. Unfortunately this track is still under construction. Please come back soon and subscribe to email updates!",
     "stages": []
+  },
+  "jenkins": {
+    "id": 3,
+    "title": "using jenkins for continuous integration",
+    "description": "In order to save time and keep your team moving fast when working on production code, continuous integration allows for code to be tested and deployed quickly. Jenkins is a popular tool that can be used to execute and automate commands for CI and other use-cases. Unfortunately this track is still under construction, so come back soon and subscribe to email updates!!",
+    "stages": []
   }
 }
 
