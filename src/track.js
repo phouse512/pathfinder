@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import MailSignupForm from './mailSignup';
 
 var Stage = React.createClass({
   render: function() {
@@ -32,11 +33,17 @@ var Node = React.createClass({
 
 var Track = React.createClass({
   render: function() {
-    var stages = this.props.track.stages.map(function(stage) {
-      return (
-        <Stage title={stage.title} nodes={stage.nodes} />
-      );
-    });
+    var construction = this.props.track.construction;
+
+    if (construction == false) {
+      var stages = this.props.track.stages.map(function(stage) {
+        return (
+          <Stage title={stage.title} nodes={stage.nodes} />
+        );
+      });
+    } else {
+      var stages = (<MailSignupForm />);
+    }
     return (
       <div className="col-lg-12 col-md-12">
         <div className="card card-block">
