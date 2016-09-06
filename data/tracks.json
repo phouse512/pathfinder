@@ -80,6 +80,12 @@
         ]
       }
     ]
+  },
+  "unix": {
+    "id": 2,
+    "title": "basic Unix proficiency",
+    "description": "For any serious development work, knowing how to get around the command line and the Unix file-system is incredibly important. This track will go through the basic building blocks that will give you a strong foundation in using a Unix OS for programming. Unfortunately this track is still under construction. Please come back soon and subscribe to email updates!",
+    "stages": []
   }
 }
 
